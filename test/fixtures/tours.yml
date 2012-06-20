@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  title: MyString
+  descripcion: MyString
+  min_capacity: 1
+  max_capacity: 1
+  equipement_required: 
+  difficulty_level: 1
+  activity_id: 1
+  duration: 
+  starting_time: 2012-06-20 16:23:37
+  meeting_point: MyString
+  available_from: 2012-06-20
+  available_to: 2012-06-20
+
+two:
+  user_id: 1
+  title: MyString
+  descripcion: MyString
+  min_capacity: 1
+  max_capacity: 1
+  equipement_required: 
+  difficulty_level: 1
+  activity_id: 1
+  duration: 
+  starting_time: 2012-06-20 16:23:37
+  meeting_point: MyString
+  available_from: 2012-06-20
+  available_to: 2012-06-20

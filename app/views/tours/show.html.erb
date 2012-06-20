@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @tour.user_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @tour.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @tour.description %>
+</p>
+
+<p>
+  <b>Min capacity:</b>
+  <%= @tour.min_capacity %>
+</p>
+
+<p>
+  <b>Max capacity:</b>
+  <%= @tour.max_capacity %>
+</p>
+
+<p>
+  <b>Equipement required:</b>
+  <%= @tour.equipement_required %>
+</p>
+
+<p>
+  <b>Difficulty level:</b>
+  <%= @tour.difficulty_level %>
+</p>
+
+<p>
+  <b>Activity:</b>
+  <%= @tour.activity_id %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @tour.duration %>
+</p>
+
+<p>
+  <b>Starting time:</b>
+  <%= @tour.starting_time %>
+</p>
+
+<p>
+  <b>Meeting point:</b>
+  <%= @tour.meeting_point %>
+</p>
+
+<p>
+  <b>Available from:</b>
+  <%= @tour.available_from %>
+</p>
+
+<p>
+  <b>Available to:</b>
+  <%= @tour.available_to %>
+</p>
+
+
+<%= link_to 'Edit', edit_tour_path(@tour) %> |
+<%= link_to 'Back', tours_path %>

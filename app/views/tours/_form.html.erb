@@ -1,0 +1,69 @@
+<%= form_for(@tour) do |f| %>
+  <% if @tour.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tour.errors.count, "error") %> prohibited this tour from being saved:</h2>
+
+      <ul>
+      <% @tour.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :min_capacity %><br />
+    <%= f.number_field :min_capacity %>
+  </div>
+  <div class="field">
+    <%= f.label :max_capacity %><br />
+    <%= f.number_field :max_capacity %>
+  </div>
+  <div class="field">
+    <%= f.label :equipement_required %><br />
+    <%= f.text_field :equipement_required %>
+  </div>
+  <div class="field">
+    <%= f.label :difficulty_level %><br />
+    <%= f.number_field :difficulty_level %>
+  </div>
+  <div class="field">
+    <%= f.label :activity_id %><br />
+    <%= f.number_field :activity_id %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br />
+    <%= f.text_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :starting_time %><br />
+    <%= f.time_select :starting_time %>
+  </div>
+  <div class="field">
+    <%= f.label :meeting_point %><br />
+    <%= f.text_field :meeting_point %>
+  </div>
+  <div class="field">
+    <%= f.label :available_from %><br />
+    <%= f.date_select :available_from %>
+  </div>
+  <div class="field">
+    <%= f.label :available_to %><br />
+    <%= f.date_select :available_to %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
